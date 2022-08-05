@@ -15,7 +15,6 @@ public class CameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(cameraNumber);
         if (Input.GetKeyDown(KeyCode.C))
         {
             if(cameraNumber >= cameras.Length-1)

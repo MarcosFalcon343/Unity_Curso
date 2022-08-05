@@ -14,15 +14,14 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            SpawnObject();
+            spawnBulllet();
         }
     }
 
-    private void SpawnObject()
+    private void spawnBulllet()
     {
         Instantiate(bullet, transform);
     }
-
 }
